@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>todos</title>
+</head>
+<body>
+    <div class="todo_app">
+        <header class="todo-app__header">
+            <h1>TODOS</h1>
+        </header>
+
+        <main class="todo-app__frame">
+            <section class="todo-app__main-controls">
+                <button class="roll_btn">
+                    v
+                </button>
+                <input class="new_task" type="text" class="input_task" placeholder="What needs to be done?">
+            </section>
+
+            <section class="todo-app__tasks">
+                <fieldset class="todo_tasks">
+                    <ul>
+                        <li class="task_in_list" role="listitem">
+                            <div class="task" id="html">
+                                <label>
+                                    <input class="is_done" type="checkbox">
+                                    <label for="html">HTML</label>
+                                </label>
+                                <button class="delete_btn">
+                                    x
+                                </button>
+                            </div>
+                        </li>
+                        <li class="task_in_list" role="listitem">
+                            <div class="task" id="css">
+                                <label>
+                                    <input class="is_done" type="checkbox" checked>
+                                    <label for="css">CSS</label>
+                                </label>
+                                <button class="delete_btn">
+                                    x
+                                </button>
+                            </div>
+                        </li>
+                        <li class="task_in_list" role="listitem">
+                            <div class="task" id="js">
+                                <label>
+                                    <input class="is_done" type="checkbox">
+                                    <label for="js">JS</label>
+                                </label>
+                                <button class="delete_btn">
+                                    x
+                                </button>
+                            </div>
+                        </li>
+                        <li class="task_in_list" role="listitem">
+                            <div class="task" id="js_tools">
+                                <label>
+                                    <input class="is_done" type="checkbox">
+                                    <label for="js_tools">JS tools</label>
+                                </label>
+                                <button class="delete_btn">
+                                    x
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section class="todo-app__actions-bar">
+                <fieldset class="todo_actions">
+                    <span class="tasks_left">3 items left</span>
+                    <span class="actions_selection" role="radiogroup">
+                        <input id="show_all" type="radio" name="selector"  checked>
+                        <label for="show_all">All</label>
+                        <input id="show_active" type="radio" name="selector" >
+                        <label for="show_active">Active</label>
+                        <input id="show_completed" type="radio" name="selector" >
+                        <label for="show_completed">Completed</label>
+                    </span>
+                    <input type="button" value="Clear completed">
+                </fieldset>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
